@@ -1,0 +1,15 @@
+# Dependencies
+**/node_modules/
+
+# Environment variables
+**/.env
+
+# Test coverage
+**/coverage/
+
+# Cypress artifacts
+**/cypress/videos/
+**/cypress/screenshots/
+
+# Logs
+npm-debug.log*
