@@ -1,76 +1,237 @@
-# MERN TODO List App
+# 📝 MERN Todo Application with Automated Testing
 
-This is a TODO List application built using the MERN stack. It allows users to manage their tasks effectively.
+A full-stack MERN Todo application developed as part of a QA Engineer Assignment.
 
-## Prerequisites
+This project demonstrates complete CRUD functionality along with Backend API Testing using Jest & Supertest and Frontend End-to-End Testing using Cypress.
 
-Before running the application, ensure you have the following installed:
-- Node.js and npm (Node Package Manager)
+---
+
+# 🚀 Tech Stack
+
+## Frontend
+
+- React.js
+- Axios
+- React Icons
+- CSS
+
+## Backend
+
+- Node.js
+- Express.js
 - MongoDB
-- MongoDB Compass (for database management)
+- Mongoose
 
-## Setup Instructions
+## Testing
 
-### 1. Clone the repository
+- Jest
+- Supertest
+- Cypress
 
-```bash
-git clone https://github.com/AtharvaKulkarniIT/mern-todo-app.git
+---
+
+# 📂 Project Structure
+
+```
+mern-todo-app
+│
+├── todo_backend
+│   ├── tests
+│   ├── utils
+│   ├── app.js
+│   ├── server.js
+│   └── jest.config.js
+│
+├── todo_frontend
+│   ├── cypress
+│   ├── src
+│   └── cypress.config.js
+│
+└── README.md
 ```
 
-### 2. Install dependencies
+---
+
+# ✨ Features
+
+- Add Todo
+- Update Todo
+- Mark Todo Complete
+- Delete Todo
+- MongoDB Integration
+- REST APIs
+- Automated API Testing
+- End-to-End UI Testing
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
 
 ```bash
-cd mern-todo-app/TODO
+git clone https://github.com/gajbhiyevr09-star/mern-todo-app.git
+```
 
-# Split the terminal :
+---
 
-# Install backend dependencies
+## Backend
+
+```bash
 cd todo_backend
 npm install
+npm start
+```
 
-# Install frontend dependencies
+Runs on
+
+```
+http://localhost:5000
+```
+
+---
+
+## Frontend
+
+```bash
 cd todo_frontend
 npm install
-```
-
-### 3. MongoDB Setup
-
-- Open MongoDB Compass
-- Create a new database named `Todo`
-- Inside the `Todo` database, create a collection named `tasks`
-
-### 4. Server setup for database connection
-
-```bash
-PORT=5000  # Port number for the server (you can change it if needed)
-MONGO_URI=mongodb://127.0.0.1:27017/Todo  # MongoDB connection URI
-```
-
-### 5. Running the App
-
-```bash
-# Start the server (from the 'todo_backend' directory)
-npm start
-
-# Start the client (from the 'todo_frontend' directory)
 npm start
 ```
 
-The server will run on `http://localhost:5000` and the client on `http://localhost:3000`.
+Runs on
 
-## Usage
+```
+http://localhost:3000
+```
 
-- Open your web browser and go to `http://localhost:3000`.
-- You can add ,update tasks, mark them as completed or delete them.
+---
 
-## Output
-![MERN TODO List App](https://drive.google.com/uc?id=135HfGq09XYieu-1sG9pQeQ41Sx1ytZ1m)
+# 🧪 Backend Testing
 
-## Contributing
+Run Jest & Supertest
 
-Feel free to contribute to this project by submitting pull requests.
+```bash
+cd todo_backend
 
-## License
+npm test
+```
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/AtharvaKulkarniIT/mern-todo-app/blob/main/LICENSE) file for details.
+---
 
+## Tested APIs
+
+- POST /add
+- GET /get
+- PUT /update/:id
+- PUT /edit/:id
+- DELETE /delete/:id
+
+---
+
+# 🌐 Frontend Testing
+
+Run Cypress
+
+```bash
+cd todo_frontend
+
+npx cypress open
+```
+
+Select
+
+```
+E2E Testing
+```
+
+Then run
+
+```
+todo.cy.js
+```
+
+---
+
+## Cypress Test Cases
+
+✔ Load Application
+
+✔ Add Todo
+
+✔ Edit Todo
+
+✔ Delete Todo
+
+---
+
+# 📊 Code Coverage
+
+Backend Coverage
+
+| Metric | Coverage |
+|---------|-----------|
+| Statements | **83.78%** |
+| Functions | **64.70%** |
+| Lines | **83.78%** |
+| Branches | **100%** |
+
+Coverage generated using Jest + Istanbul.
+
+---
+
+# 📸 Screenshots
+
+## Application
+
+_Add your application screenshot here._
+
+```
+images/app.png
+```
+
+---
+
+## Jest Test Results
+
+_Add your Jest terminal screenshot._
+
+```
+images/jest-results.png
+```
+
+---
+
+## Cypress Results
+
+_Add your Cypress screenshot._
+
+```
+images/cypress-results.png
+```
+
+---
+
+## Coverage Report
+
+_Add your coverage report screenshot._
+
+```
+images/coverage.png
+```
+
+---
+
+# 👨‍💻 Author
+
+**Vaibhav Gajbhiye**
+
+GitHub
+
+https://github.com/gajbhiyevr09-star
+
+---
+
+# 📄 License
+
+This project was developed for QA Engineer Assessment purposes.
