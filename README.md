@@ -33,8 +33,7 @@ This project demonstrates complete CRUD functionality along with Backend API Tes
 # 📂 Project Structure
 
 ```
-mern-todo-app
-│
+TODO/
 ├── todo_backend
 │   ├── tests
 │   ├── utils
@@ -47,6 +46,7 @@ mern-todo-app
 │   ├── src
 │   └── cypress.config.js
 │
+├── images
 └── README.md
 ```
 
@@ -60,7 +60,7 @@ mern-todo-app
 - Delete Todo
 - MongoDB Integration
 - REST APIs
-- Automated API Testing
+- Backend API Testing
 - End-to-End UI Testing
 
 ---
@@ -73,33 +73,31 @@ mern-todo-app
 git clone https://github.com/gajbhiyevr09-star/mern-todo-app.git
 ```
 
----
+## Install Dependencies
 
-## Backend
+### Backend
 
 ```bash
-cd todo_backend
+cd TODO/todo_backend
 npm install
 npm start
 ```
 
-Runs on
+Backend runs on:
 
 ```
 http://localhost:5000
 ```
 
----
-
-## Frontend
+### Frontend
 
 ```bash
-cd todo_frontend
+cd ../todo_frontend
 npm install
 npm start
 ```
 
-Runs on
+Frontend runs on:
 
 ```
 http://localhost:3000
@@ -109,17 +107,14 @@ http://localhost:3000
 
 # 🧪 Backend Testing
 
-Run Jest & Supertest
+Run:
 
 ```bash
-cd todo_backend
-
+cd TODO/todo_backend
 npm test
 ```
 
----
-
-## Tested APIs
+### Tested APIs
 
 - POST /add
 - GET /get
@@ -131,52 +126,32 @@ npm test
 
 # 🌐 Frontend Testing
 
-Run Cypress
+Run:
 
 ```bash
-cd todo_frontend
-
+cd TODO/todo_frontend
 npx cypress open
 ```
 
-Select
+Execute:
 
-```
-E2E Testing
-```
-
-Then run
-
-```
-todo.cy.js
-```
-
----
-
-## Cypress Test Cases
-
-✔ Load Application
-
-✔ Add Todo
-
-✔ Edit Todo
-
-✔ Delete Todo
+- Load Application
+- Add Todo
+- Edit Todo
+- Delete Todo
 
 ---
 
 # 📊 Code Coverage
 
-Backend Coverage
-
 | Metric | Coverage |
-|---------|-----------|
+|---------|----------|
 | Statements | **83.78%** |
+| Branches | **100%** |
 | Functions | **64.70%** |
 | Lines | **83.78%** |
-| Branches | **100%** |
 
-Coverage generated using Jest + Istanbul.
+Coverage generated using **Jest + Istanbul**.
 
 ---
 
@@ -184,41 +159,23 @@ Coverage generated using Jest + Istanbul.
 
 ## Application
 
-_Add your application screenshot here._
+![Application](TODO/images/application.png)
 
-```
-images/app.png
-```
+## Backend Connected
 
----
+![Backend](TODO/images/BackEnd%20Connection%20Established.png)
+
+## Frontend Running
+
+![Frontend](TODO/images/Fronetnd%20Running.png)
 
 ## Jest Test Results
 
-_Add your Jest terminal screenshot._
+![Jest](TODO/images/jest-results.png)
 
-```
-images/jest-results.png
-```
+## Cypress Test Results
 
----
-
-## Cypress Results
-
-_Add your Cypress screenshot._
-
-```
-images/cypress-results.png
-```
-
----
-
-## Coverage Report
-
-_Add your coverage report screenshot._
-
-```
-images/coverage.png
-```
+![Cypress](TODO/images/cypress-results.png)
 
 ---
 
@@ -226,12 +183,10 @@ images/coverage.png
 
 **Vaibhav Gajbhiye**
 
-GitHub
-
-https://github.com/gajbhiyevr09-star
+GitHub: https://github.com/gajbhiyevr09-star
 
 ---
 
 # 📄 License
 
-This project was developed for QA Engineer Assessment purposes.
+This project was developed for a QA Engineer Assessment.
